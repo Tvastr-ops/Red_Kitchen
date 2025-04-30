@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #ff6b6b;
+  margin-bottom: 20px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+#recipes {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+#recipes ul {
+  list-style: none;
+}
+
+#recipes li {
+  margin-bottom: 15px;
+}
+
+#recipes a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+#recipes a:hover {
+  background-color: #ff6b6b;
+  color: white;
+  transform: translateX(10px);
+}
+
+#about {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Recipe page styles */
+.recipe-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.recipe-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.ingredients-list, .steps-list {
+    padding-left: 20px;
+    margin: 15px 0;
+}
+
+.ingredients-list li, .steps-list li {
+    margin-bottom: 10px;
+}
+
+.back-link {
+    display: inline-block;
+    margin: 20px 0;
+    color: #ff6b6b;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #ff8e8e;
+}
+
+/* Override main grid for recipe pages */
+.recipe-page main {
+    grid-template-columns: 1fr;
+}
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+  
+  header {
+    padding: 30px 15px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+}
